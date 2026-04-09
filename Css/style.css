@@ -447,17 +447,8 @@ body{
 footer p{
     margin:5px 0;
 }
-/* ===== RESPONSIVE TABLETTE ET TÉLÉPHONE ===== */
 
-/* Images et vidéos adaptatives */
-img, video {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Conteneurs flexibles et sections */
-.container, .presentation, .projects-section, .contact-page {
-    width: 95%;
+   
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -479,38 +470,31 @@ img, video {
         height: auto;
     }
 }
+/* Responsivité minimale pour tablettes et téléphones */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
 
-/* Ajustement pour smartphones (≤600px) */
-@media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
+@media screen and (max-width: 768px) {
+    .presentation, .projects-section, .contact-page {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        gap: 20px;
     }
-    header p {
-        font-size: 1rem;
-    }
+
     nav ul {
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
-    nav {
-        flex-direction: column;
-        gap: 15px;
+
+    header h1 {
+        font-size: 2rem;
     }
-    .projects-section {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+
     .project-card img {
-        height: 150px;
-    }
-    .presentation {
-        padding: 20px 10px;
-    }
-    .cadre-texte {
-        padding: 15px;
-    }
-    .search-container {
-        width: 100%;
+        height: auto;
     }
 }
