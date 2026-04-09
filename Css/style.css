@@ -93,6 +93,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    gap: 35px;
 }
 
 .logo{
@@ -110,7 +111,10 @@ nav a{
     text-decoration:none;
     font-weight:bold;
 }
-
+.top-zone{
+    text-align:center;
+    padding:30px 20px;
+}
 /* PRESENTATION */
 .presentation{
     display:flex;
@@ -199,7 +203,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 55px;
     margin-bottom: 10px;
 }
 
@@ -286,7 +290,36 @@ body{
     font-family:Arial;
     background:#f8f3ed;
 }
+.search-container{
+    display:flex;
+    align-items:center;
+    width:400px;
+    margin:20px auto 40px auto;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:30px;
+    padding:8px 15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
 
+.search-container .icon{
+    font-size:18px;
+    color:#999;
+    margin-right:10px;
+}
+
+.search-container input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:transparent;
+}
+
+.search-container:focus-within{
+    box-shadow:0 6px 18px rgba(139,94,60,0.25);
+    border:1px solid #8b5e3c;
+}
 /* Navigation */
 header{
     background:#6b4f3a;
@@ -320,55 +353,53 @@ nav a{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:30px;
-    padding:50px;
+    gap:25px;
+    padding:40px 20px;
 }
 
-/* Bloc formulaire */
 .bloc-formulaire{
     background:white;
-    width:320px;
-    padding:25px;
+    width:350px;
+    padding:30px;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 
 .bloc-formulaire h2{
     text-align:center;
     color:#5c4033;
+    margin-bottom:20px;
 }
 
 form{
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:12px;
 }
+
 input, textarea{
-    width: 80%;
+    width:100%;
     padding:12px;
     border:1px solid #ccc;
     border-radius:10px;
-    margin:10px auto;
-    display:block;
+    box-sizing:border-box;
 }
-
 
 textarea{
     height:100px;
+    resize:none;
 }
+
 button{
-    width:50%;
+    width:100%;
     padding:12px;
     background:#8b5e3c;
     color:white;
     border:none;
     border-radius:10px;
-    margin:10px auto;
-    display:block;
     cursor:pointer;
 }
-
 
 button:hover{
     background:#5c4033;
@@ -376,10 +407,11 @@ button:hover{
 
 /* Footer */
 footer{
-    background:#5c4033;
-    text-align:center;
-    padding:20px;
+    background:#5C4033;
     color:white;
+    text-align:center;
+    padding:15px;
+    margin:0;
 }
 
 .reseaux{
@@ -408,73 +440,10 @@ height:auto;
         flex-direction:column;
     }
 }
-@media screen and (max-width:768px){
-
-nav{
-    flex-direction:column;
-    text-align:center;
-}
-
-nav ul{
-    flex-direction:column;
-    gap:10px;
-    padding:0;
-    margin-top:15px;
-}
-
-.presentation{
-    flex-direction:column;
-    padding:30px 15px;
-    gap:20px;
-}
-
-.cadre-photo img{
-    width:180px;
-    height:180px;
-}
-
-.cadre-texte{
-    width:90%;
-    padding:20px;
-}
-
-.cards{
-    flex-direction:column;
-    align-items:center;
-}
-
-.card{
-    width:90%;
-}
-
-.projects-section{
-    grid-template-columns:1fr;
-    padding:20px;
-}
-
-.project-card{
-    width:100%;
-}
-
-.contact-page{
-    flex-direction:column;
-    padding:20px;
-}
-
-.bloc-formulaire{
-    width:90%;
-}
-
-input, textarea{
-    width:90%;
-}
-
-button{
-    width:70%;
-}
-
 body{
-    overflow-x:hidden;
+    margin:0;
+    padding:0;
 }
-
+footer p{
+    margin:5px 0;
 }
