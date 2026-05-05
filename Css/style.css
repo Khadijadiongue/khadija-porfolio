@@ -219,7 +219,7 @@ footer {
     background: var(--marron);
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 
@@ -623,9 +623,9 @@ nav a:focus{
 
 footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
     background-color: var(--marron);
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 footer h3 {
