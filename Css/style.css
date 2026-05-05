@@ -460,7 +460,8 @@ body{
 .search-container{
     display:flex;
     align-items:center;
-    width:400px;
+    width:100%;
+    max-width:400px;
     margin:20px auto 40px auto;
     background:white;
     border:1px solid #ddd;
@@ -497,6 +498,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:relative;
 }
 
 .logo{
@@ -695,7 +697,7 @@ footer h3 {
     margin-top: auto;
     background-color: #111;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 10px;
     text-align: center;
 }
 /* ==========================================================================
@@ -703,7 +705,7 @@ footer h3 {
    ========================================================================== */
 
 .projects-page {
-    padding: 60px 10%;
+    padding: 40px 5%;
     background-color: var(--beige-clair);
     min-height: 100vh;
 }
@@ -751,7 +753,7 @@ footer h3 {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
@@ -846,4 +848,36 @@ footer h3 {
     grid-column: 1 / -1;
     text-align: center;
     padding: 50px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+
+    .projects-page {
+        padding: 40px 5%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-container button {
+        width: 100%;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
 }
