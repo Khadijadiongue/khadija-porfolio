@@ -723,36 +723,52 @@ footer h3 {
 }
 
 /* Barre de recherche moderne */
-.search-container {
-    display: flex;
-    flex-wrap: wrap; /* important */
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 30px;
-    padding: 10px;
-    gap: 10px;
-}
-
-.search-container input {
-    flex: 1;
-    min-width: 0; /* très important pour éviter le débordement */
-}
-
-.search-container button {
-    flex-shrink: 0;
-}
-.search-container button:hover {
-    background-color: var(--accent);
-}
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 30px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
 
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background: transparent;
+    min-width: 0;
+}
+
+.search-container button {
+    background-color: var(--marron);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    white-space: nowrap; /
+}
+@media (max-width: 768px) {
+    .search-container {
+        max-width: 100%;
+    }
+
+    .search-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 .project-card {
     background: white;
     border-radius: 20px;
@@ -902,9 +918,7 @@ body {
         width: 100%;
     }
 }
-* {
-    outline: 1px solid red;
-}
+
 .cadre-photo-moderne img {
     width: 100%;
     max-width: 350px;
