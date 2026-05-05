@@ -163,14 +163,12 @@ nav a:hover {
     position: relative;
     box-shadow: 15px 15px 0px var(--marron-clair); /* Effet de décalage */
 }
-
 .competences-box {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
 }
-
 .mini-cadre {
     background: #f5ebe0;
     padding: 8px 15px;
@@ -214,16 +212,12 @@ nav a:hover {
     font-size: 45px;
     margin-bottom: 20px;
 }
-
-
 footer {
     background: var(--marron);
     color: white;
     text-align: center;
     padding: 20px;
 }
-
-
 @media (max-width: 992px) {
     .hero-presentation {
         flex-direction: column;
