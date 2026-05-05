@@ -13,42 +13,45 @@
 </head>
 <body>
 <header>
-    <nav>
-        <h1 class="logo">Contactez-moi</h1>
+   <nav>
+        <h1 class="logo"> 'Contactez-moi'</h1>
         <ul>
-            <li><a href="../index.html">Présentation</a></li>
-            <li><a href="competence.html">Compétences</a></li>
-            <li><a href="projet.html">Projets</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/Projet examen porfolio/index.html" >Présentation</a></li>
+            <li><a href="/Projet examen porfolio/pages/projet.html">Projets</a></li>
+            <li><a href="/Projet examen porfolio/pages/competence.html">Compétences</a></li>
+            <li><a href="/Projet examen porfolio/pages/contact.html" ></a>Contact</a></li>
         </ul>
-    </nav>
 </header>
 <section class="contact-page">
     <div class="bloc-formulaire">
         <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Votre nom">
-            <input type="email" placeholder="Votre email">
-            <textarea placeholder="Votre message"></textarea>
-            <button type="submit">Envoyer</button>
+        <form method="POST">
+            <input type="text" placeholder="Votre nom" name="nom">
+            <input type="email" placeholder="Votre email" name="email">
+            <input type="text" placeholder="Votre numéro téléphone" name="telephone">
+            <textarea placeholder="Votre message" name="message"></textarea>
+            <button type="submit" name="envoyer_message">Envoyer</button>
         </form>
     </div>
     <div class="bloc-formulaire">
         <h2>Demande de Projet</h2>
-        <form>
-            <input type="text" placeholder="Nom du projet">
-            <textarea placeholder="Décrivez votre demande"></textarea>
-            <button type="submit">Envoyer</button>
+        <form method="POST">
+            <input type="text" placeholder="Nom du projet" name="nom_du_projet">
+            <input type="text" placeholder="Type de projet" name="type_de_projet">
+            <input type="text" placeholder="Budget" name="budget">
+            <textarea placeholder="Décrivez votre demande" name="description"></textarea>
+            <button type="submit" name="envoyer_projet">Envoyer</button>
         </form>
     </div>
 </section>
+
 <footer>
     <h3>Mes réseaux sociaux</h3>
     <div class="reseaux">
         <a href="https://www.tiktok.com/@user6175813877915" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="mailto:dionguekhadija35@gmail.com"><i class="fa-solid fa-envelope fa-1x"></i></a>
+        <a href="mailto:dionguekhadija35@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.snapchat.com/@kdiongue2028967" target="_blank"><i class="fab fa-snapchat"></i></a>
-        <a href="https://www.instagram.com/khadijahhhhh__d"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.instagram.com/khadijahhhhh__d" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
 </footer>
 </body>
