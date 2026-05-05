@@ -3,55 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation</title>
+    <title>Khadidiatou Diongue | Portfolio</title>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
     <nav>
-        <h1 class="logo">Khadidiatou Diongue</h1>
+        <h1 class="logo">Khadidiatou Diongue></h1>
         <ul>
-            <li><a href="index.html">Présentation</a></li>
-            <li><a href="pages/competence.html">Compétences</a></li>
-            <li><a href="pages/projet.html">Projets</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="/Projet examen porfolio/index.php">Présentation</a></li>
+            <li><a href="/Projet examen porfolio/pages/projet.php">Projets</a></li>
+            <li><a href="/Projet examen porfolio/pages/competence.php"?>Compétences</a></li>
+            <li><a href="/Projet examen porfolio/pages/contact.php">Contact</a></li>
+
         </ul>
     </nav>
 </header>
 
-<section class="presentation">
-    <div class="cadre-photo">
-        <img src="image/photo de profil.jpeg" alt="Ma photo">
-    </div>
-
-    <div class="cadre-texte">
-        <h2>A propos de moi </h2>
-
-        <p>
-            Je m'appelle Khadija Diongue, j'ai 20 ans et je suis étudiante en Génie Logiciel. <br>
-             Passionnée par le développement logiciel et les nouvelles technologies, <br>
-             je combine créativité et rigueur pour concevoir des projets innovants.  <br>
-             Curieuse et persévérante, j'aime relever des défis techniques, <br>
-             apprendre continuellement et mettre en pratique mes compétences pour réaliser des solutions concrètes et efficaces. <br>
+<main class="hero-presentation">
+    <div class="hero-content">
+        <span class="hero-tag">Étudiante en Génie Logiciel</span>
+        <h1>Bonjour ! Je suis <br><span class="highlight">Khadidiatou</span></h1>
+        <p class="hero-description">
+           Je m’appelle Khadija, étudiante en génie logiciel. <br>
+           Je suis passionnée par le développement web et la programmation. <br>
+           J’aime apprendre et créer des solutions informatiques simples et utiles.<br>
+           Mon objectif est de devenir une développeuse compétente dans le domaine du numérique. <br>
         </p>
-
-        <h3>Compétences principales :</h3>
-
-<div class="competences-box">
-    <div class="mini-cadre">Développement Web</div>
-    <div class="mini-cadre">Système embarqué</div>
-    <div class="mini-cadre">Administration réseau</div>
-    <div class="mini-cadre">Bases de données</div>
-</div>
+        <h3>Compétences clés :</h3>
+        <div class="competences-box">
+            <div class="mini-cadre">Développement Web</div>
+            <div class="mini-cadre">Système embarqué</div>
+            <div class="mini-cadre">Administration réseau</div>
+            <div class="mini-cadre">Bases de données</div>
+        </div>
+        <div class="hero-actions">
+            <a href="fichiers/mon_cv.pdf" download="CV_Khadija_Diongue.pdf" class="btn_cv">Télécharger mon CV</a>
+            <a href="/Projet examen porfolio/pages/contact.php" class="btn_cv outline">Me contacter</a>
+        </div>
+    </div>
+    <div class="hero-visual">
+        <div class="cadre-photo-moderne">
+            <img src="image/photo de profil.jpeg" alt="Khadidiatou Diongue">
+            <div class="shape-decoration"></div>
+        </div>
+    </div>
+</main>
+<section class="services-section">
+    <h2 class="section-title">Mes Services</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Développement Web</h3>
+            <p>Conception d'interfaces modernes et dynamiques (PHP/MySQL).</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🌐</div>
+            <h3>Réseaux</h3>
+            <p>Configuration de serveurs Windows et services DNS/DHCP.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔌</div>
+            <h3>Embarqué</h3>
+            <p>Programmation Arduino et intégration de capteurs RFID.</p>
+        </div>
     </div>
 </section>
-
 </body>
 </html>
