@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
@@ -718,35 +719,24 @@ footer h3 {
 /* Barre de recherche moderne */
 .search-container {
     display: flex;
+    flex-wrap: wrap; /* important */
+    width: 100%;
     max-width: 500px;
-    margin: 30px auto;
+    margin: 20px auto;
     background: white;
-    padding: 5px;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border: 1px solid #ddd;
-    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    gap: 10px;
 }
 
 .search-container input {
     flex: 1;
-    border: none;
-    outline: none;
-    padding: 0 15px;
-    background: transparent;
-    min-width: 0;
+    min-width: 0; /* très important pour éviter le débordement */
 }
 
 .search-container button {
-    background-color: var(--marron);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
+    flex-shrink: 0;
 }
-
 .search-container button:hover {
     background-color: var(--accent);
 }
@@ -880,4 +870,32 @@ img {
     footer {
         padding: 15px 10px;
     }
+}
+* {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-presentation {
+        padding: 40px 5%;
+    }
+
+    .projects-page {
+        padding: 40px 5%;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+}
+* {
+    outline: 1px solid red;
 }
